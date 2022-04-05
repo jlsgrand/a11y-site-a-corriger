@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Page title</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div>
+        <img src="./assets/titre-site.png">
+
+        <div class="menu">
+            <h2>Menu</h2>
+            <ul class="no-bullets">
+                <a href="#qui" style="margin: 5px;">Qui se cache derrière le Potager éveillé</a>
+                <a href="#agenda" style="margin: 5px;">L'agenda du potager éveillé</a>
+                <a href="#formation" style="margin: 5px;">S'inscrire à une formation</a>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <section>
+            <h4 id="qui">Qui se cache derrière le Potager éveillé</h4>
+            <audio src="assets/presentation-philippe.ogg" autoplay loop>
+            </audio>
+            <img src="./assets/philippe.jpg" width="500">
+            <p>
+                Photo by <a
+                    href="https://unsplash.com/@filipp_roman_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Filipp
+                    Romanovski</a> on <a
+                    href="https://unsplash.com/s/photos/gardener?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+
+            <p><strong>Salut à vous</strong>, moi c'est Philippe !</p>
+            <p>
+                Le potager c'est une passion que je tiens de mon grand-père.
+                Depuis tout petit j'ai mis les mains dans la terre avec lui.
+                A l'époque je trouvais déjà ça incroyable de voir la nature grandir sous mes yeux.
+                Ca n'a pas changé !
+            </p>
+
+            <p>Comme mon grand-père, j'aime partager mon amour de la nature, c'est pourquoi j'organise des <a
+                    href="#agenda">formations</a>
+                sur la gestion du potager. <a href="#formation">Venez y faire un tour !</a></p>
+        </section>
+
+        <section>
+            <h4 id="agenda">L'agenda des formations du Potager éveillé</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Date</td>
+                        <td>Sujet</td>
+                        <td>Lieu</td>
+                        <td>Places restantes</td>
+                        <td>S'inscrire !</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7 et 8 Mai</td>
+                        <td>Le buzz de la permaculture</td>
+                        <td><a href="https://www.hermitagelelab.com/">Au fablab rural de l'Hermitage</a></td>
+                        <td>3</td>
+                        <td><button>🙂</button></td>
+                    </tr>
+                    <tr>
+                        <td>28 et 29 Mai</td>
+                        <td>Associer ses cultures</td>
+                        <td>Chez moi à Juvignac</td>
+                        <td>5</td>
+                        <td><button>🙂</button></td>
+                    </tr>
+                    <tr>
+                        <td>11 et 12 Juin</td>
+                        <td>Partager ses productions</td>
+                        <td><a href="https://www.hermitagelelab.com/">Au fablab rural de l'Hermitage</a></td>
+                        <td>9</td>
+                        <td><button>🙂</button></td>
+                    </tr>
+                    <tr>
+                        <td>2 et 3 Juillet</td>
+                        <td>Gérer l'irrigation</td>
+                        <td>Chez moi à Juvignac</td>
+                        <td>12</td>
+                        <td><button>🙂</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+
+            <h4 id="formation">Formulaire d'inscription à la formation</h4>
+            <form>
+                <p>Nom (*)</p>
+                <input type="text">
+
+                <p>Prénom (*)</p>
+                <input type="text">
+
+                <p>Date (*)</p>
+                <select>
+                    <option value="7/05">7 et 8 Mai</option>
+                    <option value="28/05">28 et 29</option>
+                    <option value="11/06">11 et 12 Juin</option>
+                    <option value="2/07">2 et 3 Juillet</option>
+                </select>
+
+                <p>Email</p>
+                <input type="email" required>
+
+                <button type="submit">Valider</button>
+            </form>
+        </section>
+
+        <section>
+            <h4>Comment nous rejoindre</h4>
+            <img src="assets/access.png" alt="Comment nous rejoindre">
+        </section>
+
+    </div>
+
+    <div>
+        <h3>Pied de page</h3>
+    </div>
+</body>
+
+</html>
