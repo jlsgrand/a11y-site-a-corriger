@@ -33,7 +33,7 @@ td {
 }
 
 *:focus {
-    /*  visibility: hidden; */
+    visibility: hidden;
 }
 
 .main {
