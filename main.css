@@ -16,6 +16,7 @@ body {
 .no-bullets {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 table {
@@ -24,13 +25,15 @@ table {
     border-radius: 3px;
 }
 
-th, tr, td {
+th,
+tr,
+td {
     border: 1px solid black;
     padding: 5px
 }
 
 *:focus {
-    visibility: hidden;
+    /*  visibility: hidden; */
 }
 
 .main {
@@ -42,11 +45,23 @@ th, tr, td {
     text-align: center;
 }
 
-.menu > ul {
+.menu>ul {
     display: flex;
     justify-content: center;
 }
 
 .menu li {
     padding: 0.2rem 1rem;
+}
+
+input:valid.touched {
+    box-shadow: 0 0 10px green;
+}
+
+input:invalid.touched {
+    box-shadow: 0 0 10px red;
+}
+
+.footer ul {
+    display: flex;
 }

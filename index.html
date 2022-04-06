@@ -55,7 +55,7 @@
 
         <section>
             <h4 id="agenda">L'agenda des formations du Potager éveillé</h4>
-            <table>
+            <table id="agenda-table">
                 <thead>
                     <tr>
                         <td>Date</td>
@@ -66,28 +66,28 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr data-date="7/05">
                         <td>7 et 8 Mai</td>
                         <td>Le buzz de la permaculture</td>
                         <td><a href="https://www.hermitagelelab.com/">Au fablab rural de l'Hermitage</a></td>
                         <td>3</td>
                         <td><button>🙂</button></td>
                     </tr>
-                    <tr>
+                    <tr data-date="28/05">
                         <td>28 et 29 Mai</td>
                         <td>Associer ses cultures</td>
                         <td>Chez moi à Juvignac</td>
                         <td>5</td>
                         <td><button>🙂</button></td>
                     </tr>
-                    <tr>
+                    <tr data-date="11/06">
                         <td>11 et 12 Juin</td>
                         <td>Partager ses productions</td>
                         <td><a href="https://www.hermitagelelab.com/">Au fablab rural de l'Hermitage</a></td>
                         <td>9</td>
                         <td><button>🙂</button></td>
                     </tr>
-                    <tr>
+                    <tr data-date="2/07">
                         <td>2 et 3 Juillet</td>
                         <td>Gérer l'irrigation</td>
                         <td>Chez moi à Juvignac</td>
@@ -101,15 +101,15 @@
         <section>
 
             <h4 id="formation">Formulaire d'inscription à la formation</h4>
-            <form>
+            <form id="inscription-form">
                 <p>Nom (*)</p>
-                <input type="text">
+                <input type="text" id="name-input">
 
                 <p>Prénom (*)</p>
                 <input type="text">
 
                 <p>Date (*)</p>
-                <select>
+                <select id="date-input">
                     <option value="7/05">7 et 8 Mai</option>
                     <option value="28/05">28 et 29</option>
                     <option value="11/06">11 et 12 Juin</option>
@@ -130,9 +130,16 @@
 
     </div>
 
-    <div>
+    <div class="footer">
         <h3>Pied de page</h3>
+        <ul class="no-bullets">
+            <li><a href="https://facebook.com"><img src="assets/facebook.png" height="32" style="margin: 5px;"></a></li>
+            <li><a href="https://twitter.com"><img src="assets/twitter.png" height="32" style="margin: 5px;"></a></li>
+            <li><a href="https://linkedin.com"><img src="assets/linkedIn.png" height="32" style="margin: 5px;"></a></li>
+        </ul>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
